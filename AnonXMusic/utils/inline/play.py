@@ -19,8 +19,14 @@ def track_markup(_, videoid, user_id, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
+                text="👨‍✈️ Sᴜᴘᴘᴏʀᴛ",
+                url=f"T.me/Team_Bot_Support",
+            ),
+            InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 👥", url=f"t.me/Team_Bot_Update"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="✯ Cʟᴏsᴇ ✯", callback_data=f"close"
             )
         ],
     ]
@@ -66,7 +72,17 @@ def stream_markup_timer(_, chat_id, played, dur):
                 callback_data="GetTimer",
             )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+        [InlineKeyboardButton(
+                text="👨‍✈️ Sᴜᴘᴘᴏʀᴛ",
+                url=f"T.me/LovePoisonxD",
+            ),
+            InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 👥", url=f"t.me/THEBLAZENETWORK"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="✯ Cʟᴏsᴇ ✯", callback_data=f"close"
+            )
+        ],
     ]
     return buttons
 
@@ -99,9 +115,15 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         ],
         [
             InlineKeyboardButton(
-                text=_["CLOSE_BUTTON"],
-                callback_data=f"forceclose {videoid}|{user_id}",
+                text="👨‍✈️ Sᴜᴘᴘᴏʀᴛ",
+                url=f"T.me/LovePoisonxD",
             ),
+            InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇs 👥", url=f"t.me/THEBLAZENETWORK"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="✯ Cʟᴏsᴇ ✯", callback_data=f"close"
+            )
         ],
     ]
     return buttons
